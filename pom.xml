@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>jbehave-example</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <jbehave.version>5.2.0</jbehave.version>
+        <junit.version>5.10.1</junit.version>
+    </properties>
+
+    <build>
+        <plugins>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.12.1</version> &lt;!&ndash; Use the latest version available &ndash;&gt;-->
+<!--                <configuration>-->
+<!--                    <source>11</source>-->
+<!--                    <target>11</target>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
+            <!-- Maven Surefire Plugin for running tests -->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>3.0.0</version>-->
+<!--                <configuration>-->
+<!--                    <includes>-->
+<!--                        <include>**/*ScenarioTest.java</include>-->
+<!--                    </includes>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
+
+            <!-- JBehave Plugin Configuration -->
+<!--            <plugin>-->
+<!--                <groupId>org.jbehave</groupId>-->
+<!--                <artifactId>jbehave-maven-plugin</artifactId>-->
+<!--                <version>${jbehave.version}</version>-->
+
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>run-stories-as-embeddables</id>-->
+<!--                        <phase>test</phase>-->
+
+<!--                        <configuration>-->
+<!--                            <includes>-->
+<!--                                <include>**/*.java</include>-->
+<!--                            </includes>-->
+<!--                        </configuration>-->
+<!--                        <goals>-->
+<!--                            <goal>run-stories-as-embeddables</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+
+        </plugins>
+    </build>
+
+
+    <dependencies>
+        <!-- JBehave Dependency -->
+        <dependency>
+            <groupId>org.jbehave</groupId>
+            <artifactId>jbehave-core</artifactId>
+            <version>${jbehave.version}</version>
+        </dependency>
+
+		
+    </dependencies>
+
+
+</project>
